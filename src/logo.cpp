@@ -22,7 +22,7 @@ int main(int argc, char* argv[])
 	IplImage* resu = 0;
 	const char* filename = argc >= 2 ? argv[1] : "sample.mp4";
 
-	cvNamedWindow("captured", CV_WINDOW_AUTOSIZE);
+	cvNamedWindow("LOL", CV_WINDOW_AUTOSIZE);
 
 	CvCapture* capture = cvCreateFileCapture(filename);	
 
@@ -62,7 +62,7 @@ int main(int argc, char* argv[])
 						}
 					}
 				}
-				cvShowImage( "captured",resu);
+				cvShowImage( "LOL",resu);
 				}
 		}
 
@@ -70,6 +70,6 @@ int main(int argc, char* argv[])
 
 	cvReleaseCapture(&capture);
 
-	cvDestroyWindow("captured");
+	cvDestroyWindow("LOL");
         return 0;		
 }
